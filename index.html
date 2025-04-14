@@ -1,53 +1,95 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <title>Register</title>
+<style>
+  body{
+    background-image:url("image1.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    height: 100vh;
+  }
+  .form-container *{
+    text-decoration: none;
+    margin: 10px;
+  }
+  .form-container{
+    background-color: rgba(255, 255, 255, 0.0);
+    background-size: cover;
+    margin: auto;
+    backdrop-filter:blur(10px);
+    width: 40%;
+    padding: 20px 8px 14px 8px;
+    text-align:left;
+    color:#ffffff;
+    border-radius:5px;
+    margin-top:10px;
+    background-attachment:fixed;
+    
+  }
+  h1{
+    text-align:center;
+    color: #ffffff;
+  }
+  .box, .box1, textarea{
+    width: 95%;
+    padding: 3px;
+    margin: 3px;
+    background-color: transparent;
+    border: none;
+    border-bottom: solid 1px #fff;
+    color: #ffffff;
+  }
+  .btn {
+    color: #000000;
+    width: 50%;
+    padding: 10px;
+    margin: 20px auto 0;
+    text-align: center;
+    display: block;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+</style>
 </head>
-
 <body>
-    <form action="">
- 
-    <h1>REGISTER</h1>
-    <P>
-        <input type="name"
-         placeholder="enter name"
-        name="name" id="name"required/>
-    </P>
-    <P>
-        <input type="email"
-         placeholder="enter email"
-        name="email" id="email"required/>
-    </P>
-    <P>
-        <input type="password"
-         placeholder="create password"
-        name="password" id="password"required/>
-    </P>
-    <P>
-        <input type="password"
-         placeholder="re-type password"
-        name="confirm-password" id="confirm-password"required/>
-    </P>
-    <P>
-        <input type="radio"id="male" name="gender"/>
-         <label for="male" >Male </label>
-         <input type="radio"id="female" name="gender"/>
-         <label for="female" >Female </label>
-    </P>
-    <P>
-        <input type="number"
-         placeholder="phone number"
-        name="phone number" id="phone number"required/>
-    </P>
-    <P>
-        <lable for="date of birth">date of birth</lable>
-        <input type="date"/>
-        </P>
-        <button>submit</button>
-        <a href="./login.html">click here to go login page</a>
-    </form>
+  <h1>Register</h1>
+  <div>
+    <form action="login.html" method="post" class="form-container">
+      <label><strong>Name:</strong></label>
+      <input type="text" class="box" required><br><br>
+
+      <label><strong>Email:</strong></label>
+      <input type="email" class="box" required><br><br>
+
+      <label><strong>Password:</strong></label>
+      <input type="password" class="box" required><br><br>
+
+      <label><strong>Confirm Password:</strong></label>
+      <input type="password" class="box1" required><br><br>
+
+      <label><strong>Mobile No:</strong></label>
+      <input type="tel" class="box" required><br><br>
+
+      <label><strong>Date of Birth:</strong></label>
+      <input type="date" class="box" required><br><br>
+
+      <label><strong>Gender:</strong></label>
+      <input type="radio" id="male" name="gender" value="Male">
+      <label for="male">Male</label>
   
+      <input type="radio" id="female" name="gender" value="Female">
+      <label for="female">Female</label><br><br>
+
+      <label><strong>Address:</strong></label>
+      <textarea rows="2" cols="35" class="box" required></textarea><br><br>
+
+      <a href="login.html"><button type="submit" class="btn">Submit</button></a>
+    </form>
+  </div>
 </body>
 </html>

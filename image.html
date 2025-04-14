@@ -1,22 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nick Vujicic Gallery</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: black;
+    }
+
+    header {
+      background-color: #333;
+      color: white;
+      padding: 1rem 2rem;
+      text-align: center;
+    }
+
+    h2 {
+      margin-top: 1.5rem;
+      text-align: center;
+      color: #f2ff3b;
+    }
+
+    p {
+      text-align: center;
+      color:#f2ff3b;
+      margin-bottom: 2rem;
+    }
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  .gallery img {
+    width: 250px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.2s ease-in-out;
+  }
+
+  .gallery img:nth-child(1),
+  .gallery img:nth-child(4),
+  .gallery img:nth-child(10),
+  .gallery img:nth-child(14),
+  .gallery img:nth-child(18),
+  .gallery img:nth-child(19) {
+    width: 400px;
+  }
+</style>
+
+
+  </style>
 </head>
 <body>
-    <img src="https://cdcimages.cricket.com/articles/content/1740574993069?auto=compress,format&dpr=1&w=976&h400&q=80" alt="msd">
-    <img src="https://images.news18.com/ibnlive/uploads/2025/01/Ruturaj-Gaikwad-birthday-ms-dhoni-2025-01-2b41f3f5bde7f34395b1c5292cd25c0c-16x9.jpg?impolicy=website&width=640&height=360" alt="catain">
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZFvhmQi-iqRerqX8lIdWy6Q00iU8cOL5YkA&s" alt="fielding">
-    <img src="https://i0.wp.com/www.hindustantimes.com/ht-img/img/2023/05/30/900x1600/350543740_769859464665260_2690550675088344052_n_1685432511305_1685432515615.jpg?strip=all" alt="">
-    <img src="https://mir-s3-cdn-cf.behance.net/projects/404/788d7f117220041.Y3JvcCwzMDAwLDIzNDYsMCwzMjY.jpg" alt="">
-    <img src="https://assets.thehansindia.com/h-upload/2025/02/19/1525399-ms-dhoni.webp" alt="">
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXWrHQeqhV8wWQ1wj3_31BBsggNjyVKyPcLA&s" alt="mahi">
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnlkiZydyNsGaHFmtoYupyqRm7oIcQel5wvg&s" alt="">
-    <img src="https://img.jagranjosh.com/images/2023/May/3052023/ipl-2023-winner-chennai-super-kings-csk.jpg" alt="thala">
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxKzfiiI9QtGWVcYr8Zs8Dp16x7wmELphtKQ&s" alt="dhoni">
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrzd7GYPYcOvkdiVWn6_fA1bVL4z4j7yDIAA&s" alt="">
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLVQY0GaIXEZVQbbIhkAQu4IHs54XhNUUikQ&s" alt="">
-    </body>
-    </html>
+
+  <header>
+    <h1>MAHENDRA SINGH DHONI'S BLOG</h1>
+  </header>
+
+  <h2 id="gallery">Gallery</h2>
+  <p>Journey of the LEGEND </p>
+
+  <div class="gallery">
+    <!-- Image placeholders 1 to 20 -->
+    <img src="https://cdcimages.cricket.com/articles/content/1740574993069?auto=compress,format&dpr=1&w=976&h400&q=80" alt="Dhoni 1">
+    <img src="https://images.news18.com/ibnlive/uploads/2025/01/Ruturaj-Gaikwad-birthday-ms-dhoni-2025-01-2b41f3f5bde7f34395b1c5292cd25c0c-16x9.jpg?impolicy=website&width=640&height=360" alt="Dhoni 2">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZFvhmQi-iqRerqX8lIdWy6Q00iU8cOL5YkA&s" alt="Dhoni 3">
+    <img src="https://i0.wp.com/www.hindustantimes.com/ht-img/img/2023/05/30/900x1600/350543740_769859464665260_2690550675088344052_n_1685432511305_1685432515615.jpg?strip=all" alt="Dhoni 4">
+    <img src="https://mir-s3-cdn-cf.behance.net/projects/404/788d7f117220041.Y3JvcCwzMDAwLDIzNDYsMCwzMjY.jpg" alt="Dhoni 5">
+    <img src="https://assets.thehansindia.com/h-upload/2025/02/19/1525399-ms-dhoni.webp" alt="Dhoni 6">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXWrHQeqhV8wWQ1wj3_31BBsggNjyVKyPcLA&s" alt="Dhoni 7">
+    <img src="https://img.jagranjosh.com/images/2023/May/3052023/ipl-2023-winner-chennai-super-kings-csk.jpg" alt="Dhoni 8">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxKzfiiI9QtGWVcYr8Zs8Dp16x7wmELphtKQ&s" alt="Dhoni 9">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrzd7GYPYcOvkdiVWn6_fA1bVL4z4j7yDIAA&s" alt="Dhoni 10">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLVQY0GaIXEZVQbbIhkAQu4IHs54XhNUUikQ&s" alt="Dhoni 11">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOv2LeboR-ywjW-LdIIBjHMTKEeean_0fOew&s" alt="Dhoni 12">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlAJnOJxwBOn5QIlojSsEiEtU2idsVi49hiA&s" alt="Dhoni 13">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcKNZplag8lLEmR8hwEiWUiBXCh8aSLKpn0w&s" alt="Dhoni 14">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQI2ba8RTmg0fPtV6Rb5WunmiC_7R0vvA1xBA&s" alt="Dhoni 15">
+    <img src="https://cdn.educba.com/academy/wp-content/uploads/2023/12/MS-Dhoni.jpg" alt="Dhoni 16">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-bLHnLWf1lzi63hbOLknTcmr8abD7apn89A&s" alt="Dhoni 17">
+    <img src="https://bsmedia.business-standard.com/_media/bs/img/article/2022-03/24/full/1648127845-5808.jpg?im=FeatureCrop,size=(826,465)" alt="Dhoni 18">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRXaLoVHAy8oph_dPgYyWoqem4ihe85-TPjg&s" alt="Dhoni 19">
+    <img src="https://media.ahmedabadmirror.com/am/uploads/mediaGallery/image/1634090567997.jpg-org" alt="Dhoni 20">
+  </div>
+
+</body>
+</html>

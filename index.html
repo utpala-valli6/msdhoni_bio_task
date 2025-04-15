@@ -1,94 +1,113 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
   <title>Register</title>
-<style>
-  body{
-    background-image:url("image1.jpeg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    text-align: center;
-    height: 100vh;
-  }
-  .form-container *{
-    text-decoration: none;
-    margin: 10px;
-  }
-  .form-container{
-    background-color: rgba(255, 255, 255, 0.0);
-    background-size: cover;
-    margin: auto;
-    backdrop-filter:blur(10px);
-    width: 40%;
-    padding: 20px 8px 14px 8px;
-    text-align:left;
-    color:#ffffff;
-    border-radius:5px;
-    margin-top:10px;
-    background-attachment:fixed;
-    
-  }
-  h1{
-    text-align:center;
-    color: #ffffff;
-  }
-  .box, .box1, textarea{
-    width: 95%;
-    padding: 3px;
-    margin: 3px;
-    background-color: transparent;
-    border: none;
-    border-bottom: solid 1px #fff;
-    color: #ffffff;
-  }
-  .btn {
-    color: #000000;
-    width: 50%;
-    padding: 10px;
-    margin: 20px auto 0;
-    text-align: center;
-    display: block;
-    background-color: beige;
-    border: none;
-    border-radius: 5px;
-    font-weight: bold;
-    cursor: pointer;
-  }
-</style>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-image: url("image1.jpeg");
+      background-size: cover;
+      font-family: Arial, sans-serif;
+    }
+
+    .form-container {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(4px);
+      padding: 40px;
+      width: 400px;
+      margin: 50px auto;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+      color: rgb(255, 255, 255);
+      margin-top: -1px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: none;
+      border-radius: 5px;
+    }
+
+    input[type="radio"] {
+      width: auto;
+      margin-right: 10px;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      background-color: rgb(75, 63, 63);
+      color: rgb(255, 255, 255);
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #ccc;
+    }
+
+    .login-link {
+      text-align: center;
+      margin-top: 15px;
+    }
+
+    .login-link a {
+      color: rgb(59, 30, 201);
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
-  <h1>Register</h1>
-  <div>
-    <form action="./login.html" method="post" class="form-container">
-      <label><strong>Name:</strong></label>
-      <input type="text" class="box" required><br><br>
+  <div class="form-container">
+    <h2>Register</h2>
+    <form action="login.html" method="get">
+      <label>Name:</label>
+      <input type="text" required />
 
-      <label><strong>Email:</strong></label>
-      <input type="email" class="box" required><br><br>
+      <label>Email:</label>
+      <input type="email" required />
 
-      <label><strong>Password:</strong></label>
-      <input type="password" class="box" required><br><br>
+      <label>Password:</label>
+      <input type="password" required />
 
-      <label><strong>Confirm Password:</strong></label>
-      <input type="password" class="box1" required><br><br>
+      <label>Confirm Password:</label>
+      <input type="password" required />
 
-      <label><strong>Mobile No:</strong></label>
-      <input type="tel" class="box" required><br><br>
+      <label>Mobile No:</label>
+      <input type="number" required />
 
-      <label><strong>Date of Birth:</strong></label>
-      <input type="date" class="box" required><br><br>
+      <label>Date of Birth:</label>
+      <input type="date" required />
 
-      <label><strong>Gender:</strong></label>
-      <input type="radio" id="male" name="gender" value="Male">
-      <label for="male">Male</label>
-  
-      <input type="radio" id="female" name="gender" value="Female">
-      <label for="female">Female</label><br><br>
+      <label>Gender:</label>
+      <input type="radio" name="gender" /> Male
+      <input type="radio" name="gender" /> Female
 
-      <label><strong>Address:</strong></label>
-      <textarea rows="2" cols="35" class="box" required></textarea><br><br>
+      <label>Address:</label>
+      <textarea required></textarea>
 
-      <a href="login.html"><button type="submit" class="btn">Submit</button></a>
+      <button type="submit">Submit</button>
+
+      <div class="login-link">
+        Already have an account? <a href="login.html">Login here</a>
+      </div>
     </form>
   </div>
 </body>
